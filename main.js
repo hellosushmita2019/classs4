@@ -25,12 +25,13 @@ function OnKeyEnterPressDoThis() {
 todoInput.addEventListener("keypress", function(e) {
 
     var key = e.which || e.keyCode || 0;
-
+// console.log (key)
     if (key === 13) {
         OnKeyEnterPressDoThis();
         //alert(" enter key press ");
     }
-
+if (key=== 32)
+OnKeyEnterPressDoThis();
 });
 
 
